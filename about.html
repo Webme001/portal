@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Jul-M Production & Co</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- <body> -->
+    <section class="sub-header">
+       <nav>
+           <a href="index.html"><img src="images/logo-2.jpg"></a>
+           <div class="nav-links" id="navLinks">
+              <li class="fa fa-times" onclick="hideMenu()"></li>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="gds.html">GDS</a></li>
+              </ul> 
+           </div>
+           <li class="fa fa-bars" onclick="showMenu()"></li>
+       </nav>
+       <h1>About Me</h1>
+    </section>
+
+<!-----About Content------>   
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                 <h1>Julfadzly Muhaimin</h1>
+                 <p>Robotic (IOT) Developer and ICT Trainer<br>Born in Sandakan 1/3/1998, Mechatronic Student & Fresh Graduate in Politeknik Kota Kinabalu CGPA(3.68)<br>Now living in Kota Kinabalu and working with Kinabalu Coders in Kota Kinabalu.</p>
+                 <a href="https://docs.google.com/document/d/17qDMaL5CkreymJ4PN954tUJ52fPvb08iCQ1MiYYX2C0/edit?usp=sharing" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                 <img src="images/about-2.jpg">
+            </div>
+        </div>
+    </section>
+
+<!-----Footer------>
+
+<section class="footer">
+    <h5>Jul-M Production & Co</h4>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Jul Maker</p>
+</section>
+
+<!-----Js Script for toggle menu------>
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+</body>
+</html>

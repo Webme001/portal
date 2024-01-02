@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Jul-M Production & Co</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+       <nav>
+           <a href="index.html"><img src="images/logo-2.jpg"></a>
+           <div class="nav-links" id="navLinks">
+              <li class="fa fa-times" onclick="hideMenu()"></li>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="gds.html">GDS</a></li>
+              </ul> 
+           </div>
+           <li class="fa fa-bars" onclick="showMenu()"></li>
+       </nav>
+       <h1>Contact Me</h1>
+    </section>
+
+<!-----Contact Me------>   
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.9006553910116!2d116.16752778811913!3d6.049128099724847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323b6cc47b6151dd%3A0x40f50e849b83c23c!2s14-15%2C%20Lorong%20Buah%20Pinang%201%2C%2089200%20Kota%20Kinabalu%2C%20Sabah!5e0!3m2!1sen!2smy!4v1644450112449!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+              <div class="contact-col">
+                  <div>
+                      <i class="fa fa-home"></i>
+                      <span>
+                          <h5>Taman Tebobon, Lorong Buah Pinang 1, Lot 46, No. 17</h5>
+                          <p>Jalan Sepanggar Menggatal, 88450 Kota Kinabalu</p>
+                      </span>
+                  </div>
+                  <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+6016-2873136</h5>
+                            <p>Monday to Sunday, 10AM to 5PM</p>
+                        </span>
+                  </div>
+                  <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>julfadzlymuhaimin98@gmail.com</h5>
+                        <p>Email me your query</p>
+                    </span>
+                  </div>
+              </div>
+              <div class="contact-col">
+                  <form action="">
+                      <!--<input type="text" placeholder="Enter your name" required>
+                      <input type="email" placeholder="Enter Email Address" required>
+                      <input type="text" placeholder="Enter your subject" required>
+                      <textarea rows="8" placeholder="Message" required></textarea>-->
+                      <div><h5>Fill out this form if you want to use my Website services</h5></div>
+                      <!-- <form action="https://docs.google.com/document/u/0/"> -->
+                        <a href="https://forms.gle/4XC5qyidakHdYmGF6" class="hero-btn red-btn">Fill in Form</a>
+                    <!-- </form> -->
+                  </form>
+              </div>
+        </div>
+    </section>
+
+<!-----Footer------>
+
+<section class="footer">
+    <h5>Jul-M Production & Co</h5>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Jul Maker</p>
+</section>
+
+<!-----Js Script for toggle menu------>
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Jul-M Production & Co</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+       <nav>
+           <a href="index.html"><img src="images/logo-2.jpg"></a>
+           <div class="nav-links" id="navLinks">
+              <li class="fa fa-times" onclick="hideMenu()"></li>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="contact.html">EVENTS</a></li>
+                <li><a href="gds.html">GDS</a></li>
+              </ul> 
+           </div>
+           <li class="fa fa-bars" onclick="showMenu()"></li>
+       </nav>
+       <h1>My Activity</h1>
+    </section>
+
+
+
+
+<!-----Events------>
+<br>
+<br>
+<br>
+<br>
+<section class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="images/basketball-3.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="images/cafeteria-4.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="images/library-2.jpg" style="width:100%">
+    </div>
+  
+</section>
+<br>
+<br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+} 
+
+</script>
+
+<!-----Footer------>
+
+<section class="footer">
+    <h5>Jul-M Production & Co</h4>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Jul Maker</p>
+</section>
+
+<!-----Js Script for toggle menu------>
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+</body>
+</html>
